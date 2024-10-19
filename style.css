@@ -1,0 +1,242 @@
+
+
+
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: aqua;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 450px;
+    background-color: azure;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.wrapper h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.wrapper .content {
+    margin: 20px 0;
+}
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.inputs input {
+    width: 56px;
+    height: 56px;
+    margin: 4px;
+    font-size: 25px;
+    border: 3px solid rgb(191, 225, 225);
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(216, 149, 67);
+}
+
+.details p {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.reset-btn {
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    padding: 15px 3px;
+    cursor: pointer;
+    color: #272525;
+    border-radius: 5px;
+    background-color: rgb(62, 71, 202);
+    margin: 10px 0;
+}
+
+/* Keyboard Styles */
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    background-color: aqua;
+}
+
+.key-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 0;
+}
+
+.key {
+    width: 30px;
+    height: 30px;
+    margin: 3px; /* Reduced margin for smaller screens */
+    font-size: 16px; /* Slightly smaller font size */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(28, 220, 220);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.key:hover {
+    background-color: rgb(191, 225, 225);
+    color: black;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 600px) {
+    .wrapper {
+        padding: 15px;
+    }
+
+    .wrapper h1 {
+        font-size: 1.3rem;
+    }
+
+    .inputs input {
+        width: 40px; /* Smaller width for smaller screens */
+        height: 40px; /* Adjust height */
+        font-size: 18px; /* Smaller font size */
+    }
+
+    .details p {
+        font-size: 16px;
+    }
+
+    .reset-btn {
+        font-size: 15px;
+    }
+
+    .key {
+        width: 28px; /* Smaller keys */
+        height: 28px; /* Smaller keys */
+        font-size: 14px; /* Smaller font size */
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .wrapper {
+        padding: 10px;
+    }
+
+    .wrapper h1 {
+        font-size: 1.2rem;
+    }
+
+    .inputs input {
+        width: 36px; /* Even smaller width */
+        height: 36px; /* Adjust height */
+        font-size: 16px; /* Smaller font size */
+    }
+
+    .key-row{
+        margin: 1px 0;
+    }
+
+    .details p {
+        font-size: 14px;
+    }
+
+    .reset-btn {
+        padding: 10px 0;
+    }
+
+    .key {
+        width: 20px; /* Even smaller keys */
+        height: 20px; /* Even smaller keys */
+        font-size: 10px; /* Smaller font size */
+    }
+}
+
+@media screen and (max-width: 318px) {
+    .key {
+        width: 18px; /* Even smaller keys */
+        height: 18px; /* Even smaller keys */
+        font-size: 8px; /* Smaller font size */
+    }
+    .key-row{
+        padding: 1px 1px;
+    }
+}
+
+@media screen and (max-width:286px) {
+    .key {
+        width: 16px; /* Even smaller keys */
+        height: 16px; /* Even smaller keys */
+        font-size:7px; /* Smaller font size */
+    }
+    .key-row{
+        padding: 0.5px 0.5px;
+    }
+}
+
+@media screen and (max-width:268px) {
+    .key {
+        width: 13px; /* Even smaller keys */
+        height: 13px; /* Even smaller keys */
+        font-size:6px; /* Smaller font size */
+    }
+    .key-row{
+       margin: 0.05px 0.05px;
+    }
+}
+
+
+#resultBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 2px solid #000;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.score-section {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.score-section p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #333;
+}
+
+.score-section span {
+    font-weight: bold;
+    color: #007BFF; /* Change color for better visibility */
+}

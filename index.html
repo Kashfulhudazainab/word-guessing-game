@@ -1,0 +1,146 @@
+<!-- 
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WORD GUESSING GAME</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Guess The Word</h1>
+        <div class="content">
+            <input type="text" class="typing-input" />
+            <div class="inputs"></div>
+            <div class="details">
+                <p class="hint">HINT: <span>hint will be shown here</span></p>
+                <p class="guess-left">REMAINING GUESSES: <span></span></p>
+                <p class="wrong-letters">WRONG LETTERS: <span></span></p>
+            </div>
+            
+            <div class="keyboard">
+                <div class="key-row">
+                    <button class="key">Q</button>
+                    <button class="key">W</button>
+                    <button class="key">E</button>
+                    <button class="key">R</button>
+                    <button class="key">T</button>
+                    <button class="key">Y</button>
+                    <button class="key">U</button>
+                    <button class="key">I</button>
+                    <button class="key">O</button>
+                    <button class="key">P</button>
+                </div>
+                <div class="key-row">
+                    <button class="key">A</button>
+                    <button class="key">S</button>
+                    <button class="key">D</button>
+                    <button class="key">F</button>
+                    <button class="key">G</button>
+                    <button class="key">H</button>
+                    <button class="key">J</button>
+                    <button class="key">K</button>
+                    <button class="key">L</button>
+                </div>
+                <div class="key-row">
+                    <button class="key">Z</button>
+                    <button class="key">X</button>
+                    <button class="key">C</button>
+                    <button class="key">V</button>
+                    <button class="key">B</button>
+                    <button class="key">N</button>
+                    <button class="key">M</button>
+                </div>
+                <button class="reset-btn">RESET</button>
+                <button class="reset-btn rest-btn">New Game</button>
+            </div>
+            <div id="resultBox" class="hidden">
+              <h2>Game Over!</h2>
+              <p id="resultMessage"></p>
+              <button onclick="restartGame()">Restart Game</button>
+          </div>
+        </div>
+    </div>
+
+    <script src="word.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WORD GUESSING GAME</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Guess The Word</h1>
+        <div class="content">
+            <input type="text" class="typing-input" />
+            <div class="inputs"></div>
+            <div class="details">
+                <p class="hint">HINT: <span>hint will be shown here</span></p>
+                <p class="guess-left">REMAINING GUESSES: <span></span></p>
+                <p class="wrong-letters">WRONG LETTERS: <span></span></p>
+            </div>
+            <div class="keyboard">
+                <div class="key-row">
+                    <button class="key">Q</button>
+                    <button class="key">W</button>
+                    <button class="key">E</button>
+                    <button class="key">R</button>
+                    <button class="key">T</button>
+                    <button class="key">Y</button>
+                    <button class="key">U</button>
+                    <button class="key">I</button>
+                    <button class="key">O</button>
+                    <button class="key">P</button>
+                </div>
+                <div class="key-row">
+                    <button class="key">A</button>
+                    <button class="key">S</button>
+                    <button class="key">D</button>
+                    <button class="key">F</button>
+                    <button class="key">G</button>
+                    <button class="key">H</button>
+                    <button class="key">J</button>
+                    <button class="key">K</button>
+                    <button class="key">L</button>
+                </div>
+                <div class="key-row">
+                    <button class="key">Z</button>
+                    <button class="key">X</button>
+                    <button class="key">C</button>
+                    <button class="key">V</button>
+                    <button class="key">B</button>
+                    <button class="key">N</button>
+                    <button class="key">M</button>
+                </div>
+                <button class="reset-btn">RESET</button>
+                <button class="reset-btn rest-btn">New Game</button>
+            </div>
+            <div id="resultBox" class="hidden">
+                <h2>Game Over!</h2>
+                <p id="resultMessage"></p>
+                <button onclick="restartGame()">Restart Game</button>
+            </div>
+            <div class="score-section">
+              <p>Total Games Played: <span id="totalGames">0</span></p>
+              <p>Correct Answers: <span id="correctAnswers">0</span></p>
+              <p>Incorrect Answers: <span id="incorrectAnswers">0</span></p>
+          </div>
+          
+        </div>
+    </div>
+
+    <script src="word.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
