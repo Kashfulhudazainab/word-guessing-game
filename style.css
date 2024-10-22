@@ -1,3 +1,7 @@
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -40,8 +44,7 @@ body {
 }
 
 .inputs input {
-    width: 10vw; /* Fluid width */
-    min-width: 36px; /* Minimum width */
+    width: 56px;
     height: 56px;
     margin: 4px;
     font-size: 25px;
@@ -85,11 +88,10 @@ body {
 }
 
 .key {
-    width: 5vw; /* Fluid width */
-    min-width: 30px; /* Minimum width */
+    width: 30px;
     height: 30px;
-    margin: 3px;
-    font-size: 16px;
+    margin: 3px; /* Reduced margin for smaller screens */
+    font-size: 16px; /* Slightly smaller font size */
     border: 2px solid #ccc;
     border-radius: 5px;
     background-color: rgb(28, 220, 220);
@@ -114,9 +116,9 @@ body {
     }
 
     .inputs input {
-        width: 40px; /* Adjusted for smaller screens */
-        height: 40px;
-        font-size: 18px;
+        width: 40px; /* Smaller width for smaller screens */
+        height: 40px; /* Adjust height */
+        font-size: 18px; /* Smaller font size */
     }
 
     .details p {
@@ -128,9 +130,9 @@ body {
     }
 
     .key {
-        width: 28px;
-        height: 28px;
-        font-size: 14px;
+        width: 28px; /* Smaller keys */
+        height: 28px; /* Smaller keys */
+        font-size: 14px; /* Smaller font size */
     }
 }
 
@@ -144,42 +146,63 @@ body {
     }
 
     .inputs input {
-        width: 36px;
-        height: 36px;
-        font-size: 16px;
+        width: 36px; /* Even smaller width */
+        height: 36px; /* Adjust height */
+        font-size: 16px; /* Smaller font size */
+    }
+
+    .key-row{
+        margin: 1px 0;
+    }
+
+    .details p {
+        font-size: 14px;
+    }
+
+    .reset-btn {
+        padding: 10px 0;
     }
 
     .key {
-        width: 20px;
-        height: 20px;
-        font-size: 10px;
+        width: 20px; /* Even smaller keys */
+        height: 20px; /* Even smaller keys */
+        font-size: 10px; /* Smaller font size */
     }
 }
 
-/* Further adjustments for extremely small screens */
 @media screen and (max-width: 318px) {
     .key {
-        width: 18px;
-        height: 18px;
-        font-size: 8px;
+        width: 18px; /* Even smaller keys */
+        height: 18px; /* Even smaller keys */
+        font-size: 8px; /* Smaller font size */
+    }
+    .key-row{
+        padding: 1px 1px;
     }
 }
 
-@media screen and (max-width: 286px) {
+@media screen and (max-width:286px) {
     .key {
-        width: 16px;
-        height: 16px;
-        font-size: 7px;
+        width: 16px; /* Even smaller keys */
+        height: 16px; /* Even smaller keys */
+        font-size:7px; /* Smaller font size */
+    }
+    .key-row{
+        padding: 0.5px 0.5px;
     }
 }
 
-@media screen and (max-width: 268px) {
+@media screen and (max-width:268px) {
     .key {
-        width: 13px;
-        height: 13px;
-        font-size: 6px;
+        width: 13px; /* Even smaller keys */
+        height: 13px; /* Even smaller keys */
+        font-size:6px; /* Smaller font size */
+    }
+    .key-row{
+       margin: 0.05px 0.05px;
     }
 }
+
 
 #resultBox {
     position: fixed;
@@ -196,6 +219,7 @@ body {
 .hidden {
     display: none;
 }
+
 
 .score-section {
     margin: 20px 0;
@@ -214,5 +238,5 @@ body {
 
 .score-section span {
     font-weight: bold;
-    color: #007BFF;
+    color: #007BFF; /* Change color for better visibility */
 }
